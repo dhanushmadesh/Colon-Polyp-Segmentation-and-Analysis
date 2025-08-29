@@ -1,0 +1,18 @@
+# Virtual environment
+venv/
+
+# Datasets
+dataset/
+Kvasir-SEG/
+
+# Model checkpoints (optional, comment out if you want to keep models)
+model/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE settings
+.vscode/
+.idea/

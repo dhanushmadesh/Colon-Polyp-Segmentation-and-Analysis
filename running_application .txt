@@ -1,0 +1,6 @@
+cd '.\Desktop\MAJOR PROJECT\Polyp-Segmentation\'
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+
+.\venv\Scripts\activate
