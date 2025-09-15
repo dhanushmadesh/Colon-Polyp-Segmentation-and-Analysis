@@ -1,0 +1,12 @@
+MODEL EVALUATION REPORT
+=======================
+
+Model Path: model/best_model_b4.h5
+Test Data: dataset/val/images, dataset/val/masks
+
+Loss: 0.1118
+IoU: 0.7963
+F1-score: 0.8859
+Precision-Recall AUC: 0.8976
+
+Qualitative results saved in ./model_evaluation/predictions/

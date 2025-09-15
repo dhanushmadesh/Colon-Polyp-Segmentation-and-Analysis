@@ -1,0 +1,25 @@
+step 0:
+
+cd "C:\Users\dhanu\Desktop\MAJOR PROJECT\Polyp-Segmentation"
+
+
+
+
+step 1:
+
+Windows PowerShell blocks scripts by default for security reasons
+
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+
+step 2:
+
+venv\Scripts\activate
+
+Now (venv) should appear in your prompt ✅
+
+
+step 3:
+
+python app.py
