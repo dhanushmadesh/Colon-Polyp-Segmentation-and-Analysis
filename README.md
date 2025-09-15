@@ -1,50 +1,51 @@
 # 🩺 Colon Polyp Segmentation & Analysis
 
-> **Major Project (2025) – Information Science & Engineering**  
-> Deep Learning–based system for detecting and segmenting colon polyps in colonoscopy images.  
+A Deep Learning project that detects and segments **colon polyps** from colonoscopy images using **U-Net with EfficientNetB4**.  
+The tool provides **visual overlays**, **numeric analysis**, and **natural-language summaries** to assist in research and awareness.
 
 ---
 
-## 🚀 Overview
-
-Colorectal cancer is one of the most common cancers worldwide. Early detection of **polyps** during colonoscopy plays a vital role in prevention.  
-This project builds a **Deep Learning pipeline** using **EfficientNetB4 + UNet** to automatically:
-
-- Detect polyps in colonoscopy images.  
-- Generate segmentation masks.  
-- Highlight polyps with overlay visualization.  
-- Provide **scientific analysis metrics**. 
-- Export results as **CSV report** and **segmentation masks (ZIP)**.  
+## 🚀 Key Features
+- **Segmentation**: Detects and highlights polyp regions in colonoscopy images.  
+- **Analysis**: Reports polyp count, area, shape (solidity, eccentricity, aspect ratio), and coverage %.  
+- **Summaries**: Generates descriptive text for each image (e.g., *“medium-sized oval polyp with smooth borders”*).  
+- **Outputs**:
+  - Overlay image (original + mask)  
+  - Numeric CSV report  
+  - Downloadable masks (ZIP)  
 
 ---
 
-## ✨ Features
+## 📊 Results
+- **F1-score**: 0.886  
+- **IoU**: 0.796  
+- **PR AUC**: 0.898  
+- **Best Model**: `model/best_model_b4.h5`
 
-- 🧠 **Deep Learning Model**: EfficientNetB4 backbone with UNet architecture.  
-- 📸 **Image Segmentation**: Produces binary masks of detected polyps.  
-- 🎨 **Overlay Visualization**: Polyps highlighted on the original image.  
-- 📊 **Analysis Table**:  
-  - Polyp area (px)  
-  - Estimated polyp count  
-  - Coverage %  
-  - Severity (small/medium/large)  
-  - Risk level (low/moderate/high)  
-  - Confidence score (%)  
-- 💾 **Export Options**:  
-  - CSV summary report  
-  - ZIP of all mask images  
-- 🌐 **Interactive UI**: Built with **Gradio** (no need for complex setup).  
+![Precision-Recall Curve](precision_recall_curve.png)
 
 ---
 
-## 🖼️ Demo UI
+## 🎯 Demo
+1. Upload colonoscopy images  
+2. Click **Run Segmentation**  
+3. View results:
+   - Original | Overlay | Mask  
+   - Numeric table  
+   - Summary description  
+   - CSV + ZIP downloads  
 
-[ Upload Images ] → [ Run Segmentation ]
-↓
-[ Original | Overlay | Mask ] results in grid
-↓
-📊 Summary Table
-↓
-⬇️ Download CSV | ZIP
+---
+
+## 👨‍💻 Team
+- Dhanush  
+- Hemanth  
+- Sathya  
+- Likhith  
+
+---
+
+⚠️ *This project is for academic and research purposes only — not a clinical diagnostic tool.*
+
 
 
