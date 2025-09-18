@@ -1,6 +1,6 @@
 step 0:
 
-cd "C:\Users\dhanu\Desktop\MAJOR PROJECT\Polyp-Segmentation"
+change directory to project location 
 
 
 
